@@ -9,7 +9,7 @@ const HomePage = () => {
       <meta property="og:title" content="React/SSR app" />
     </Helmet>
   );
-  
+
   return (
     <div className="center-align">
       {headContent}

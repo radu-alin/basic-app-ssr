@@ -1,4 +1,6 @@
 import 'babel-polyfill';
+
+// Start point for the server side application
 import express from 'express';
 import proxy from 'express-http-proxy';
 import { matchRoutes } from 'react-router-config';
@@ -6,7 +8,7 @@ import { matchRoutes } from 'react-router-config';
 import { Routes } from './client/Routes';
 
 import { renderer } from './helpers/renderer';
-import createStore from './helpers/createStore';
+import { createStore } from './helpers/createStore';
 
 const app = express();
 
